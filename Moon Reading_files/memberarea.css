@@ -1,0 +1,194 @@
+.pull-accent {
+  padding-top: 144px;
+  padding-bottom: 92px;
+  background: url("../img/loginback.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.pull-accent > .container .tile {
+  max-width: 628px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-accent > .container .tile.noaccess {
+  opacity: .35;
+  pointer-events: none;
+}
+.pull-accent > .container .tile.article {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #E7E4E7;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.pull-accent > .container .tile.article .desc {
+  padding: 20px 24px;
+}
+.pull-accent > .container .tile.article .desc > h6 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1B2026;
+  font-family: "PT Serif" ,sans-serif;
+  font-weight: bold;
+}
+.pull-accent > .container .tile.article .desc .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+.pull-accent > .container .tile.article .desc .buttons > audio {
+  width: 100%;
+}
+.pull-accent > .container .tile.article .desc .buttons > a {
+  margin-right: 20px;
+}
+.pull-accent > .container .tile.article .desc .buttons > a:last-child {
+  margin-right: 0px;
+}
+.pull-accent > .container .tile.article .desc .buttons > a > span {
+  min-width: 188px;
+}
+.pull-accent > .container .tile.article .desc > p {
+  margin: 0px;
+  font-family: "Georgia" ,sans-serif;
+  color: #39414D;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+}
+.pull-accent > .container .tile.article .desc > p span {
+  color: #2294E5;
+  font-weight: bold;
+  font-family: "Georgia" ,sans-serif;
+}
+.pull-accent > .container .tile.article .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pull-accent > .container .tile.article .media > img {
+  max-width: 100%;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pull-accent > .container .tile.article:last-child {
+  margin-bottom: 0px;
+}
+.pull-accent > .container .tile.activate {
+  margin-bottom: 60px;
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.pull-accent > .container .tile.activate > h6 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: "PT Serif" ,sans-serif;
+}
+.pull-accent > .container .tile.activate > p {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 135%;
+  font-family: "Georgia" ,sans-serif;
+  color: #1B2026;
+}
+.pull-accent > .container .tile.activate > p span {
+  color: #2294E5;
+  font-weight: bold;
+  font-family: "Georgia" ,sans-serif;
+}
+.pull-accent > .container > h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  font-size: 48px;
+  line-height: 60px;
+  color: #1B2026;
+  font-family: "PT Serif" ,sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .pull-accent {
+    padding-top: 76px;
+    padding-bottom: 32px;
+  }
+
+  .pull-accent > .container > h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+  .pull-accent > .container .tile.activate {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .pull-accent > .container .tile.activate > h6 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+
+  .pull-accent > .container .tile.activate > p {
+    font-size: 14px;
+  }
+
+  .pull-accent > .container .tile.article .desc {
+    padding: 12px;
+  }
+
+  .pull-accent > .container .tile.article .desc > h6 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .pull-accent > .container .tile.article .desc > p {
+    font-size: 14px;
+  }
+
+  .pull-accent > .container .tile.article .desc .buttons {
+    margin-top: 16px;
+  }
+  .pull-accent > .container .tile.article .desc .buttons > a {
+    width: 100%;
+    max-width: 142px;
+    margin-right: 12px;
+  }
+  .pull-accent > .container .tile.article .desc .buttons > a:last-child {
+    margin-right: 0px;
+  }
+  .pull-accent > .container .tile.article .desc .buttons > a > span {
+    font-size: 14px;
+    min-height: 32px;
+    min-width: 0px;
+  }
+}
