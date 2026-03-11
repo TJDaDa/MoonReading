@@ -1,0 +1,67 @@
+/* Scoped styles for Lunar page content - no conflict with main site .container */
+.lunar-content-box {
+	background-color: #06050a;
+	color: #ffffff;
+	padding: 40px 0 60px;
+}
+.lunar-content-box .lunar-container {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.lunar-content-box .center {
+	text-align: center;
+}
+.lunar-content-box .pink {
+	color: #f5b0cf;
+}
+.lunar-content-box a {
+	color: #49a0b5;
+}
+.lunar-content-box .w-200 {
+	width: 200px;
+}
+.lunar-content-box .form-group label {
+	color: #fff;
+}
+.lunar-content-box .checkbox label {
+	color: #fff;
+}
+.lunar-content-box .small {
+	font-size: 0.9em;
+	color: #c7cacc;
+}
+.lunar-content-box .privacy-choices {
+	font-size: .9em;
+	margin-top: 20px;
+	text-align: center;
+}
+.lunar-content-box .privacy-choices,
+.lunar-content-box .privacy-choices a {
+	color: #c7cacc;
+}
+.lunar-content-box .privacy-choices img {
+	vertical-align: middle;
+	margin-right: 4px;
+	height: .8em;
+	display: inline-block;
+	position: relative;
+	top: -0.1em;
+}
+.lunar-content-box .form-control {
+	background-color: #1a1a1a;
+	color: #fff;
+	border-color: #444;
+}
+.lunar-content-box .form-control:focus {
+	background-color: #222;
+	color: #fff;
+	border-color: #49a0b5;
+}
+.lunar-content-box .btn-info {
+	background-color: #49a0b5;
+	border-color: #49a0b5;
+}
+.lunar-content-box .birthtime-select.hidden {
+	display: none !important;
+}
