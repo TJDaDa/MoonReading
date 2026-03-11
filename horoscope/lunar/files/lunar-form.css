@@ -49,14 +49,15 @@
 	top: -0.1em;
 }
 .lunar-content-box .form-control {
-	background-color: #1a1a1a;
-	color: #fff;
-	border-color: #444;
+	background-color: #fff;
+	color: #1b2026;
+	border: 1px solid #ced4da;
 }
 .lunar-content-box .form-control:focus {
-	background-color: #222;
-	color: #fff;
+	background-color: #fff;
+	color: #1b2026;
 	border-color: #49a0b5;
+	box-shadow: 0 0 0 0.2rem rgba(73, 160, 181, 0.25);
 }
 .lunar-content-box .btn-info {
 	background-color: #49a0b5;
