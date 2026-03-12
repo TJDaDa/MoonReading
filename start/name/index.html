@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Adapted from https://www.moonreading.com/start/name/ saved source -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../../../files/2523922164511192" async></script>
+    <script async src="../../../assets/js/fbevents.js"></script>
+    <script type="text/javascript" async src="../../../files/saved_resource"></script>
+    <script type="text/javascript" async src="../../../assets/js/analytics.js"></script>
+    <script>
+      (function (w, i, g) {
+        w[g] = w[g] || [];
+        if (typeof w[g].push == "function") w[g].push(i);
+      })(window, "AW-590897327", "google_tags_first_party");
+    </script>
+    <script async src="../../../files/saved_resource(1)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("set", "developer_id.dY2E1Nz", true);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="https://www.moonreading.com/img/moon-icon-16.png" />
+    <title>Get your FREE Moon Reading!</title>
+
+    <link href="../../../assets/signup_name/fonts.css" rel="stylesheet" />
+    <link href="../../../assets/signup_name/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../../assets/signup_name/clean.css" rel="stylesheet" />
+
+    <script
+      id="Cookiebot"
+      src="../../../assets/js/uc.js"
+      data-cbid="587d32a3-5e88-4c51-8686-dfa0233eb012"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body class="bg-sky">
+    <div class="top">
+      <div class="progressOut"><div class="progressIn" style="width: 95%"></div></div>
+    </div>
+
+    <div class="content">
+      <div class="max-450">
+        <h3 class="center">What is your first name?</h3>
+        <p class="center">This helps us make your reading extra personal!</p>
+
+        <form id="moon-form" class="max-600 mt-20">
+          <div class="form-group">
+            <label for="fname">First name:</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter first name" required />
+          </div>
+
+          <p class="center"><button class="cta mt-20" type="submit">Continue</button></p>
+        </form>
+      </div>
+
+      <footer>
+        <p class="center">
+          <a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Service</a> | <a href="/help/">Contact</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="../../../assets/signup_name/jquery.min.js"></script>
+    <script>
+      $(".progressIn").css("width", "95%");
+      document.getElementById("moon-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const q = new URLSearchParams(window.location.search);
+        q.set("fname", document.getElementById("fname").value);
+        window.location.href = "/start/get/?" + q.toString();
+      });
+    </script>
+  </body>
+</html>

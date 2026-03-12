@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Adapted from https://www.moonreading.com/start/audio/ saved source -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../../../files/2523922164511192" async></script>
+    <script async src="../../../assets/js/fbevents.js"></script>
+    <script type="text/javascript" async src="../../../files/saved_resource"></script>
+    <script type="text/javascript" async src="../../../assets/js/analytics.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <title>Your FREE Video Moon Reading!</title>
+
+    <link href="../../../assets/css/members.css" rel="stylesheet" />
+    <link href="../../../assets/css/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="moongrad full">
+      <div class="nav float">
+        <div class="nav-left"></div>
+        <div class="nav-middle">
+          <a href="/"><img src="../../../assets/img/moonreading-logo.svg" style="height: 50px; width: 50px" /></a>
+        </div>
+        <div class="nav-right"></div>
+      </div>
+
+      <div class="container max-550">
+        <h3 class="center mt-25">Your FREE Video Moon Reading</h3>
+        <p class="center">
+          注册流程已集成到本地静态站点。此 “audio” 页面原始版本依赖远端的 `/json/`、`/mp3/`、以及部分 `/img/` 动态资源与接口，
+          本仓库目前没有这些后端/静态资源，因此这里先保留为静态落地页占位。
+        </p>
+
+        <div class="tile" style="background: #fff; color: #1b2026">
+          <p><b>Captured params</b></p>
+          <pre id="params" style="white-space: pre-wrap; word-break: break-word; margin: 0"></pre>
+        </div>
+
+        <p class="center mt-25">
+          <a class="button" href="/login/">Go to Login</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("params").textContent = new URLSearchParams(window.location.search).toString();
+    </script>
+  </body>
+</html>

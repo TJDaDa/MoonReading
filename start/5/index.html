@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Adapted from https://www.moonreading.com/start/5/ saved source -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../../files/2523922164511192" async></script>
+    <script async src="../../assets/js/fbevents.js"></script>
+    <script type="text/javascript" async src="../../files/saved_resource"></script>
+    <script type="text/javascript" async src="../../assets/js/analytics.js"></script>
+    <script>
+      (function (w, i, g) {
+        w[g] = w[g] || [];
+        if (typeof w[g].push == "function") w[g].push(i);
+      })(window, "AW-590897327", "google_tags_first_party");
+    </script>
+    <script async src="../../files/saved_resource(1)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("set", "developer_id.dY2E1Nz", true);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="https://www.moonreading.com/img/moon-icon-16.png" />
+    <title>Get your FREE Moon Reading!</title>
+
+    <link href="../../assets/signup_step5/fonts.css" rel="stylesheet" />
+    <link href="../../assets/signup_step5/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../assets/signup_step5/clean.css" rel="stylesheet" />
+
+    <script
+      id="Cookiebot"
+      src="../../assets/js/uc.js"
+      data-cbid="587d32a3-5e88-4c51-8686-dfa0233eb012"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body class="bg-sky">
+    <div class="top">
+      <div class="progressOut"><div class="progressIn" style="width: 50%"></div></div>
+      <a href="/start/4/?prev=back"><img style="width: 40px; margin-left: 10px" id="back" src="../../assets/signup_step5/white-back.png" /></a>
+      <p class="title">Moon Reading</p>
+    </div>
+
+    <div class="content">
+      <div class="max-450">
+        <p id="entered"></p>
+        <h3>Do you know your birthtime?</h3>
+      </div>
+
+      <div class="birthday-panel mt-20">
+        <div class="bpan-dblank"></div>
+        <a href="/start/6/" id="know-birthtime" class="bpan-decade">Yes</a>
+        <a href="/start/load/" class="bpan-decade">No</a>
+        <div class="bpan-dblank"></div>
+      </div>
+    </div>
+
+    <script src="../../assets/signup_step5/jquery.min.js"></script>
+    <script>
+      $(".progressIn").css("width", "50%");
+      const q = new URLSearchParams(window.location.search);
+      const m = q.get("m");
+      const d = q.get("d");
+      const y = q.get("y");
+      if (m && d && y) {
+        document.getElementById("entered").textContent = `You entered: ${m}/${d}/${y}.`;
+      }
+      // carry query params forward
+      document.querySelectorAll('a[href^="/start/6/"], a[href^="/start/load/"]').forEach((a) => {
+        const u = new URL(a.href, window.location.origin);
+        q.forEach((v, k) => u.searchParams.set(k, v));
+        a.href = u.pathname + "?" + u.searchParams.toString();
+      });
+    </script>
+  </body>
+</html>

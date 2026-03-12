@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Adapted from https://www.moonreading.com/start/city/ saved source -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../../../files/2523922164511192" async></script>
+    <script async src="../../../assets/js/fbevents.js"></script>
+    <script type="text/javascript" async src="../../../files/saved_resource"></script>
+    <script type="text/javascript" async src="../../../assets/js/analytics.js"></script>
+    <script>
+      (function (w, i, g) {
+        w[g] = w[g] || [];
+        if (typeof w[g].push == "function") w[g].push(i);
+      })(window, "AW-590897327", "google_tags_first_party");
+    </script>
+    <script async src="../../../files/saved_resource(1)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("set", "developer_id.dY2E1Nz", true);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="https://www.moonreading.com/img/moon-icon-16.png" />
+    <title>Get your FREE Moon Reading!</title>
+
+    <link href="../../../assets/signup_city/fonts.css" rel="stylesheet" />
+    <link href="../../../assets/signup_city/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../../assets/signup_city/clean.css" rel="stylesheet" />
+
+    <script
+      id="Cookiebot"
+      src="../../../assets/js/uc.js"
+      data-cbid="587d32a3-5e88-4c51-8686-dfa0233eb012"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body class="bg-sky">
+    <div class="top">
+      <div class="progressOut"><div class="progressIn" style="width: 87.5%"></div></div>
+      <a href="/start/load/?prev=back"><img style="width: 40px; margin-left: 10px" id="back" src="../../../assets/signup_city/white-back.png" /></a>
+      <p class="title">Moon Reading</p>
+    </div>
+
+    <div class="quiz q1">
+      <h3>Select your city of birth</h3>
+      <p>
+        For a more accurate reading, please choose the closest city to where you were born. If you can’t find your city,
+        choose a neighboring city.
+      </p>
+
+      <!-- Static integration: keep UI, but navigate locally on submit -->
+      <form id="cityForm">
+        <div style="float: left; width: 100%">
+          <label for="country">Country of birth:</label>
+          <select name="country" id="country" style="width: 100%">
+            <option value="US" selected>United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+          </select>
+        </div>
+
+        <div style="float: left; margin-top: 15px; width: 100%">
+          <label for="region">Region:</label>
+          <input id="region" name="region" class="form-control" placeholder="Region / State" />
+        </div>
+
+        <div style="float: left; margin-top: 15px; width: 100%">
+          <label for="city">City of birth:</label>
+          <input id="city" name="city" class="form-control" placeholder="City" required />
+        </div>
+
+        <br style="clear: both" />
+        <br />
+        <button class="cta" id="continue1" type="submit">Continue</button>
+      </form>
+    </div>
+
+    <script src="../../../assets/signup_city/jquery.min.js"></script>
+    <script>
+      $(".progressIn").css("width", "87.5%");
+      document.getElementById("cityForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const q = new URLSearchParams(window.location.search);
+        q.set("country", document.getElementById("country").value);
+        q.set("region", document.getElementById("region").value || "");
+        q.set("city", document.getElementById("city").value || "");
+        window.location.href = "/start/name/?" + q.toString();
+      });
+    </script>
+  </body>
+</html>

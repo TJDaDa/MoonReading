@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Adapted from https://www.moonreading.com/start/6/ saved source -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../../files/2523922164511192" async></script>
+    <script async src="../../assets/js/fbevents.js"></script>
+    <script type="text/javascript" async src="../../files/saved_resource"></script>
+    <script type="text/javascript" async src="../../assets/js/analytics.js"></script>
+    <script>
+      (function (w, i, g) {
+        w[g] = w[g] || [];
+        if (typeof w[g].push == "function") w[g].push(i);
+      })(window, "AW-590897327", "google_tags_first_party");
+    </script>
+    <script async src="../../files/saved_resource(1)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("set", "developer_id.dY2E1Nz", true);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="https://www.moonreading.com/img/moon-icon-16.png" />
+    <title>Get your FREE Moon Reading!</title>
+
+    <link href="../../assets/signup_step6/fonts.css" rel="stylesheet" />
+    <link href="../../assets/signup_step6/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../assets/signup_step6/clean.css" rel="stylesheet" />
+
+    <script
+      id="Cookiebot"
+      src="../../assets/js/uc.js"
+      data-cbid="587d32a3-5e88-4c51-8686-dfa0233eb012"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body class="bg-sky">
+    <div class="top">
+      <div class="progressOut"><div class="progressIn" style="width: 62.5%"></div></div>
+      <a href="/start/5/?prev=back"><img style="width: 40px; margin-left: 10px" id="back" src="../../assets/signup_step6/white-back.png" /></a>
+      <p class="title">Moon Reading</p>
+    </div>
+
+    <div class="content">
+      <div class="max-450">
+        <h3>Select your birthtime</h3>
+        <p>If you don't know your exact birthtime an approximate time will still work.</p>
+
+        <div class="birthday-panel flex-center">
+          <div class="birthtime1">
+            <section>
+              <div style="float: left; margin-right: 12px">
+                <label for="birthday1_hour">Hour:</label>
+                <select name="birthday_hour" id="birthday1_hour">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12" selected>12</option>
+                </select>
+              </div>
+
+              <div style="float: left; margin-right: 12px">
+                <label for="birthday1_minute">Min:</label>
+                <select name="birthday_minute" id="birthday1_minute">
+                  <option value="0" selected>00</option>
+                  <option value="15">15</option>
+                  <option value="30">30</option>
+                  <option value="45">45</option>
+                </select>
+              </div>
+
+              <div style="float: left">
+                <label for="birthday1_am">&nbsp;</label>
+                <select name="birthday_am" id="birthday1_am">
+                  <option value="AM">AM</option>
+                  <option value="PM" selected>PM</option>
+                </select>
+              </div>
+              <br style="clear: both" />
+            </section>
+          </div>
+          <br />
+        </div>
+
+        <p class="center mt-30"><button class="cta" id="continue1" type="button">Continue</button></p>
+      </div>
+    </div>
+
+    <script src="../../assets/signup_step6/jquery.min.js"></script>
+    <script>
+      $(".progressIn").css("width", "62.5%");
+      const q = new URLSearchParams(window.location.search);
+      document.getElementById("continue1").addEventListener("click", () => {
+        q.set("hour", document.getElementById("birthday1_hour").value);
+        q.set("minute", document.getElementById("birthday1_minute").value);
+        q.set("ampm", document.getElementById("birthday1_am").value);
+        window.location.href = "/start/load/?" + q.toString();
+      });
+    </script>
+  </body>
+</html>
