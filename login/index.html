@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- Adapted from https://www.moonreading.com/login/ saved source -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../files/2523922164511192" async></script>
+    <script async src="../assets/js/fbevents.js"></script>
+    <script type="text/javascript" async src="../files/saved_resource"></script>
+    <script type="text/javascript" async src="../assets/js/analytics.js"></script>
+    <script type="text/javascript" async src="../assets/js/jquery-3.7.1.js"></script>
+    <script>
+      (function (w, i, g) {
+        w[g] = w[g] || [];
+        if (typeof w[g].push == "function") w[g].push(i);
+      })(window, "AW-590897327", "google_tags_first_party");
+    </script>
+    <script async src="../files/saved_resource(1)"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("set", "developer_id.dY2E1Nz", true);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <title>Log in to your MoonReading account!</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:8080/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:8080/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8080/favicon-16x16.png" />
+    <link rel="mask-icon" href="http://localhost:8080/safari-pinned-tab.svg" color="#006fb0" />
+
+    <link href="../assets/css/members.css" rel="stylesheet" />
+    <link href="../assets/css/css" rel="stylesheet" />
+
+    <script
+      id="Cookiebot"
+      src="../assets/js/uc.js"
+      data-cbid="587d32a3-5e88-4c51-8686-dfa0233eb012"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+    <style type="text/css" id="CookieConsentStateDisplayStyles">
+      .cookieconsent-optin,
+      .cookieconsent-optin-preferences,
+      .cookieconsent-optin-statistics,
+      .cookieconsent-optin-marketing {
+        display: block;
+        display: initial;
+      }
+      .cookieconsent-optout-preferences,
+      .cookieconsent-optout-statistics,
+      .cookieconsent-optout-marketing,
+      .cookieconsent-optout {
+        display: none;
+      }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-cookieconsent="ignore">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+      });
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", false);
+    </script>
+
+    <script src="../assets/js/js(1)" data-cookieconsent="marketing" type="text/javascript"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script data-cookieconsent="statistics" type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-146859082-1");
+      gtag("config", "G-H802VRJEV8", { groups: "GA4" }); // Google Analytics 4 property
+    </script>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script data-cookieconsent="marketing" type="text/javascript">
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "2523922164511192", {
+        external_id: "1a3b4cd0de13dcaf3bcc9e4077fe2662d8bd51b79a267b776592df97fa157e61",
+      });
+      fbq("track", "PageView");
+    </script>
+    <script src="../assets/js/js(2)" data-cookieconsent="marketing" type="text/javascript"></script>
+    <!-- End Google -->
+
+    <script data-cookieconsent="marketing" type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-590897327");
+    </script>
+    <script type="text/javascript" async src="../files/f.txt"></script>
+  </head>
+
+  <body>
+    <!-- Begin page content -->
+    <div class="moongrad full">
+      <div class="nav float">
+        <div class="nav-left"></div>
+
+        <div class="nav-middle">
+          <a href="http://localhost:8080/">
+            <img src="../assets/img/moonreading-logo.svg" style="height: 50px; width: 50px" />
+          </a>
+        </div>
+
+        <div class="nav-right"></div>
+      </div>
+
+      <div class="container max-550">
+        <h3 class="center mt-25">Log in:</h3>
+        <form name="form" method="post" action="https://www.moonreading.com/login/">
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required />
+          </div>
+          <div class="form-group">
+            <label for="receipt">Receipt Number:</label>
+            <input type="text" class="form-control" id="receipt" name="receipt" placeholder="Receipt Number" required />
+          </div>
+          <p><i>Your receipt number is emailed to you when you purchase a MoonReading membership</i></p>
+          <div class="form-group">
+            <p class="center mt-25 mb-25">
+              <button type="submit" class="fix-250 button">Log in to MoonReading</button>
+            </p>
+          </div>
+        </form>
+
+        <p class="center">
+          Don't have an account?
+          <a class="white" href="http://localhost:8080/"><u>Get your FREE MoonReading here</u></a>, or contact
+          brad@moonreading.com if you are having trouble accessing your products.
+        </p>
+
+        <style>
+          .privacy-choices {
+            font-size: 0.9em;
+            margin-top: 20px;
+            text-align: center;
+          }
+          .privacy-choices,
+          .privacy-choices a {
+            color: #c7cacc;
+          }
+          .privacy-choices img {
+            vertical-align: middle;
+            margin-right: 4px;
+            height: 0.8em;
+            display: inline-block;
+            position: relative;
+            top: -0.1em;
+          }
+        </style>
+        <p class="privacy-choices">
+          <a href="http://localhost:8080/terms/">Terms of Service</a> ·
+          <a href="http://localhost:8080/privacy/">Privacy Policy</a> ·
+          <a href="http://localhost:8080/privacy-choices/">
+            <img src="../assets/img/privacy-choices.png" alt="Privacy Icon" />Your Privacy Choices
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="../files/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+      integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfRmLUKTTrnSFXLDkUEOTrZQ8Qg=="
+      data-cf-beacon='{"version":"2024.11.0","token":"8df5a862ca264e16b0efba7598b3b060","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+
+    <iframe
+      name="__uspapiLocator"
+      tabindex="-1"
+      role="presentation"
+      aria-hidden="true"
+      title="Blank"
+      style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px"
+      src="../files/saved_resource.html"
+    ></iframe>
+    <iframe
+      tabindex="-1"
+      role="presentation"
+      aria-hidden="true"
+      title="Blank"
+      src="../files/bc-v4.min.html"
+      style="position: absolute; width: 1px; height: 1px; top: -9999px"
+    ></iframe>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Log in to your MoonReading account!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.moonreading.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.moonreading.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.moonreading.com/favicon-16x16.png">
+    <link rel="mask-icon" href="https://www.moonreading.com/safari-pinned-tab.svg" color="#006fb0">
+    <link href="./files/members.css" rel="stylesheet">
+    <link href="./files/css" rel="stylesheet">
+    <style>
+    .privacy-choices {
+      font-size: .9em;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .privacy-choices, .privacy-choices a {
+      color:#c7cacc;
+    }
+    .privacy-choices img {
+      vertical-align: middle;
+      margin-right: 4px;
+      height: .8em;
+      display: inline-block;
+      position: relative;
+      top: -0.1em;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Begin page content -->
+  <div class="moongrad full">
+
+  <div class="nav float">
+
+  <div class="nav-left">
+  </div>
+
+  <div class="nav-middle">
+    <a href="http://localhost:8080/"><img src="./files/moonreading-logo.svg" style="height: 50px; width: 50px;"></a>
+  </div>
+
+  <div class="nav-right">
+  </div>
+
+</div>
+
+<div class="container max-550">
+
+<h3 class="center mt-25">Log in:</h3>
+<form name="form" method="post" action="http://localhost:8080/login/">
+<div class="form-group">
+    <label for="formGroupExampleInput2">Email address:</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required="">
+  </div>
+<div class="form-group">
+    <label for="name">Receipt Number:</label>
+    <input type="text" class="form-control" id="receipt" name="receipt" placeholder="Receipt Number" required="">
+  </div>
+  <p><i>Your receipt number is emailed to you when you purchase a MoonReading membership</i></p>
+<div class="form-group">
+  <p class="center mt-25 mb-25"><button type="submit" class="fix-250 button">Log in to MoonReading</button></p>
+</div>
+</form>
+
+<p class="center">Don't have an account? <a class="white" href="http://localhost:8080/"><u>Get your FREE MoonReading here</u></a>, or contact brad@moonreading.com if you are having trouble accessing your products.</p>
+
+<p class="privacy-choices"><a href="http://localhost:8080/terms/">Terms of Service</a> · <a href="http://localhost:8080/privacy/">Privacy Policy</a> · <a href="https://www.moonreading.com/privacy-choices/"><img src="./files/privacy-choices.png" alt="Privacy Icon">Your Privacy Choices</a></p>
+</div>
+</div>
+
+<iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;" src="./files/saved_resource.html"></iframe><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="./files/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe></body>
+</html>
