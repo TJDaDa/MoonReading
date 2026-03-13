@@ -1,0 +1,153 @@
+body {
+    background: url(/img/astrology-paper-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url(https://www.moonreading.com/img/astrology-paper-bg.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+h1, h2, h3, h4, p, .sign-icons, .cinzel, .noto {
+    font-family: 'Noto Serif', serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.max-800 {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.max-600 {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.max-320 {
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.moon-logo {
+    width: 56px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.top-nav {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.top-nav a, footer a {
+    color: #222222;
+}
+
+.sign-icons {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sign-icon {
+    margin: 1% 0.5%;
+    width: 15.66%;
+    float: left;
+    text-align: center;
+}
+
+.sign-icon img {
+    width: 100%;
+}
+
+.break {
+    width: 100%;
+    height: 20px;
+}
+
+.testimonial img {
+width: 100%;
+max-width: 600px;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.5em;
+  font-size: 1.2em;
+}
+ul li:before {
+  content: "☾";
+  position: absolute;
+  left: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .sign-icon {
+        width: 24%;
+    }
+}
+
+@media (max-width: 641px) {
+    h1 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .moon-logo {
+        width: 36px;
+    }
+    .sign-icon {
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width: 321px) {
+    h1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .moon-logo {
+        width: 34px;
+    }
+    .sign-icon {
+        font-size: 10px;
+    }
+}
