@@ -1,0 +1,1011 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+body * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/georgia.ttf");
+}
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 39, 48, 0.5);
+  z-index: 5;
+  display: none;
+}
+.container {
+  max-width: 884px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05), 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05), 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  z-index: 8;
+  padding: 16px 0px;
+}
+header .outer__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+header .outer__header .menu__wrapper {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+header .outer__header .menu__wrapper .bottom__part {
+  display: none;
+}
+header .outer__header .menu__wrapper > .top__part > ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li {
+  margin-right: 37px;
+  position: relative;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li:hover > a {
+  color: #1492a4;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li:hover > a span svg path {
+  stroke: #1492a4;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box {
+  position: absolute;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: 60px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  padding-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  min-width: 242px;
+  max-width: 242px;
+  opacity: 0;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  pointer-events: none;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box:hover {
+  opacity: 1;
+  pointer-events: initial;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box > h6 {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #1b2026;
+  font-family: "PT Serif", sans-serif;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  width: 100%;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul li {
+  width: 100%;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul li a {
+  width: 100%;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #39414d;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  border-radius: 8px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul li a:hover {
+  background-color: #f7f8fa;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #1b2026;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  padding: 25px 0px;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li > a.opened {
+  color: #1492a4 !important;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li > a.opened span {
+  -webkit-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li > a.opened span svg path {
+  stroke: #1492a4 !important;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li > a span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 8px;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li > a span svg path {
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+header .outer__header .menu__wrapper > .top__part > ul > li:last-child {
+  margin-right: 0px;
+}
+header .outer__header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+header .outer__header .buttons > a {
+  margin-right: 42px;
+}
+header .outer__header .buttons > a.regular-btn > span {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header .outer__header .buttons > a.login {
+  font-size: 18px;
+  color: #269bab;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 23px;
+  min-height: 44px;
+  border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  margin-right: 20px;
+}
+header .outer__header .buttons > a.login:hover {
+  background-color: #e2eff3;
+}
+header .outer__header .buttons > a:last-child {
+  margin-right: 0px;
+}
+header .outer__header .left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+header .outer__header .left .menu__button {
+  display: none;
+}
+header .outer__header .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+header .outer__header .logo a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+header .outer__header .logo a img {
+  width: 156px;
+}
+header .container {
+  max-width: 1316px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hero__section {
+  background: url("../img/heroback.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 144px;
+  padding-bottom: 22px;
+  position: relative;
+}
+.hero__section .container {
+  max-width: 910px;
+}
+.hero__section .outer__hero {
+  position: relative;
+  z-index: 2;
+}
+.hero__section .outer__hero > .top {
+  text-align: center;
+}
+.hero__section .outer__hero > .top .btn {
+  width: 100%;
+  max-width: 844px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.hero__section .outer__hero > .top .btn > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  min-height: 1px;
+  background-color: #e1dde6;
+}
+.hero__section .outer__hero > .top .btn > a {
+  margin: 0px 20px;
+}
+.hero__section .outer__hero > .top > h1 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #1b2026;
+  font-family: "PT Serif", sans-serif;
+}
+.hero__section .outer__hero > .top > p {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #39414d;
+}
+.regular-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: 0px;
+  text-decoration: none;
+  border-radius: 9px;
+  border-radius: 10px;
+  background: #258a99;
+  padding: 1px;
+  position: relative;
+}
+.regular-btn > span {
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+.regular-btn > span span {
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+.regular-btn:hover span {
+  border-color: transparent !important;
+}
+.regular-btn:hover > span {
+  border-color: transparent !important;
+}
+.regular-btn:hover > span:before {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.regular-btn > span {
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.16)), to(rgba(255, 255, 255, 0))), #1492a4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%), #1492a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+  width: 100%;
+  color: #ffffff;
+  height: 100%;
+  min-height: 42px;
+  position: relative;
+  z-index: 2;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 10px;
+}
+.regular-btn > span span {
+  position: relative;
+  z-index: 3;
+}
+.regular-btn > span:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 9px;
+  background-color: transparent;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+.regular-btn.hero {
+  border-radius: 10px;
+  background: url("../img/herobtn.webp");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.regular-btn.hero > span {
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(217, 217, 217, 0.01);
+}
+.regular-btn.white {
+  -webkit-filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.08));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.03))), rgba(255, 255, 255, 0.4);
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.03) 100%), rgba(255, 255, 255, 0.4);
+}
+.regular-btn.white:hover > span:before {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.regular-btn.white > span {
+  color: #1b2026;
+  background-color: #fff;
+}
+.regular-btn.white > span:before {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.regular-btn.light {
+  background-color: #8d73cd;
+}
+.regular-btn.light > span {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.16)), to(rgba(255, 255, 255, 0))), #997ddf;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%), #997ddf;
+}
+.regular-btn.blue{
+  background-color: #1F88D4;
+}
+.regular-btn.blue > span {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.16)), to(rgba(255, 255, 255, 0))), #2294E5;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%), #2294E5;
+}
+.daily__horoscope {
+  margin-top: 60px;
+}
+.daily__horoscope .grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+.daily__horoscope .grid.smaller__circle .elem .media:before {
+  min-width: 75px;
+  max-width: 75px;
+  min-height: 75px;
+  max-height: 75px;
+}
+.daily__horoscope .grid .elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 22px;
+  position: relative;
+}
+.daily__horoscope .grid .elem .desc > span {
+  -webkit-transition: 0.15s ease all;
+  transition: 0.15s ease all;
+}
+.daily__horoscope .grid .elem:hover {
+  z-index: 4;
+}
+.daily__horoscope .grid .elem:hover .desc > span {
+  color: #997ddf;
+}
+.daily__horoscope .grid .elem:hover .media:before {
+  opacity: 1;
+}
+.daily__horoscope .grid .elem:hover:before {
+  opacity: 1;
+}
+.daily__horoscope .grid .elem:before {
+  content: "";
+  position: absolute;
+  min-width: 140px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #997ddf;
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: 0.15s ease all;
+  transition: 0.15s ease all;
+}
+.daily__horoscope .grid .elem .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+.daily__horoscope .grid .elem .desc > span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #39414d;
+  letter-spacing: -0.28px;
+}
+.daily__horoscope .grid .elem .desc > p {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #1b2026;
+  font-family: "PT Serif", sans-serif;
+}
+.daily__horoscope .grid .elem .media {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 104px;
+  max-width: 104px;
+  min-height: 104px;
+  max-height: 104px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 3;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.daily__horoscope .grid .elem .media:before {
+  content: "";
+  min-width: 84px;
+  max-width: 84px;
+  min-height: 84px;
+  max-height: 84px;
+  border-radius: 84px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-box-shadow: 0px 12px 24px 0px rgba(161, 120, 238, 0.25);
+  box-shadow: 0px 12px 24px 0px rgba(161, 120, 238, 0.25);
+  opacity: 0;
+  -webkit-transition: 0.15s ease all;
+  transition: 0.15s ease all;
+}
+.daily__horoscope .grid .elem .media img {
+  position: relative;
+  z-index: 4;
+  max-width: 100%;
+}
+
+.daily__horoscope .grid .elem .media .small__image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 250px;
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 5;
+}
+.daily__horoscope .grid .elem .media .small__image img {
+  width: 20px;
+}
+
+.daily__horoscope > .top {
+  text-align: center;
+}
+.daily__horoscope > .top > h2 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #1b2026;
+  font-family: "PT Serif", sans-serif;
+}
+.daily__horoscope > .top > p {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #39414d;
+}
+.no-margin{
+  width: calc(100% + 40px);
+  margin:0px;
+  margin-left: -20px;
+  padding:0px;
+  text-align:center;
+}
+.no-margin>img {
+  max-width: 100%;
+  width:100%;
+}
+.no-margin iframe{
+  max-width: 100%;
+  width:100%;
+}
+.no-margin + *{
+  margin-top: 15px;
+}
+@media (max-width: 1200px) {
+  header .outer__header .menu__wrapper > .top__part > ul > li > a {
+    font-size: 17px;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li {
+    margin-right: 23px;
+  }
+  header .outer__header .buttons > a.login {
+    margin-right: 25px;
+  }
+}
+.small__logo {
+  display: none;
+}
+@media (max-width: 991px) {
+  header {
+    background-color: #fff;
+  }
+  header .outer__header .logo {
+    position: relative;
+    top: 1px;
+  }
+  header .outer__header .left .menu__button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 16px;
+  }
+  header .outer__header .left .menu__button a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    max-height: 24px;
+  }
+  header .outer__header .buttons > a.login {
+    display: none;
+  }
+  header .outer__header .buttons > a.regular-btn > span {
+    min-height: 32px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .small__logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 10px;
+    margin-bottom: 32px;
+  }
+  .small__logo a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .small__logo a img {
+    width: 130px;
+  }
+  header {
+    backdrop-filter: none;
+    padding: 12px 0px;
+    -webkit-backdrop-filter: none;
+  }
+  header .outer__header .logo a img {
+    width: 130px;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li > a {
+    padding: 0px;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li:hover a {
+    color: #1b2026;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li:hover a span {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li:hover a span svg path {
+    stroke: #1b2026;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box {
+    position: static;
+    opacity: 1;
+    pointer-events: initial;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    min-width: 0px;
+    max-width: 100%;
+    margin-top: 2px;
+    padding: 0px;
+    display: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul li {
+    margin-bottom: 2px;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul li:last-child {
+    margin-bottom: 0px;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box ul li a {
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li .dropdown__box > h6 {
+    margin: 0px;
+    display: none;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  header .outer__header .menu__wrapper > .top__part > ul > li:last-child {
+    margin-bottom: 0px;
+  }
+  header .outer__header .menu__wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    -webkit-transform: none;
+    transform: none;
+    overflow-y: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    left: -280px;
+    z-index: 6;
+  }
+  header .outer__header .menu__wrapper .bottom__part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .outer__header .menu__wrapper .bottom__part > a {
+    width: 100%;
+  }
+  header .outer__header .menu__wrapper .bottom__part > a.login {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44px;
+    border-radius: 10px;
+    background: #f2f3f5;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #1b2026;
+    margin-bottom: 12px;
+  }
+  .daily__horoscope .grid .elem:before {
+    content: none;
+  }
+  .hero__section .outer__hero > .top > h1 {
+    font-size: 32px;
+    margin-bottom: 4px;
+    line-height: 40px;
+  }
+  .hero__section {
+    padding-top: 76px;
+  }
+  .hero__section {
+    padding-bottom: 0px;
+  }
+  .daily__horoscope .grid .elem .desc > p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+  .daily__horoscope .grid .elem .desc > span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .daily__horoscope > .top > h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 4px;
+  }
+  .daily__horoscope > .top > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .daily__horoscope .grid {
+    margin-top: 0px;
+  }
+  .daily__horoscope .grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__section .outer__hero > .top .btn {
+    margin-top: 21px;
+  }
+  .hero__section .outer__hero > .top .btn > span {
+    display: none;
+  }
+  .daily__horoscope {
+    margin-top: 20px;
+  }
+  .hero__section .outer__hero > .top > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .daily__horoscope .grid .elem .media:before {
+    content: "" !important;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+  }
+}
+@media (max-width: 540px) {
+  .daily__horoscope .grid.smaller__circle .elem .media:before {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  .daily__horoscope .grid .elem .media:before {
+    content: "" !important;
+    min-width: 65px;
+    max-width: 65px;
+    min-height: 65px;
+    max-height: 65px;
+  }
+  .daily__horoscope .grid .elem .media img {
+    width: 86px;
+  }
+  .daily__horoscope .grid .elem .media {
+    width: 86px;
+  }
+
+  .daily__horoscope .grid .elem {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .daily__horoscope .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero__section .outer__hero > .top > h1 br {
+    display: none;
+  }
+  .hero__section .outer__hero > .top > h1 {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__section .outer__hero > .top > p br {
+    display: none;
+  }
+  .hero__section .outer__hero > .top > p {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 360px) {
+  .daily__horoscope .grid .elem .desc > p {
+    font-size: 14px;
+  }
+  .daily__horoscope .grid .elem .desc > span {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
